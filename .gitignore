@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+.vs/
+
+# VS
+*.tlog
+*.idb
+*.pdb
+*.log
+*.user
+*.ilk
