@@ -9,6 +9,7 @@ enum class TestType
 	NONE = -1,
 	CREATE_EMPTY_SCENE,
 	LOAD_SCENE,
+	TRANSFER_STRING,
 };
 
 

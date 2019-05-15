@@ -5,11 +5,15 @@
 #include <map>
 #include <vector>
 
+#define TO_STRING(x) #x
+
+
 #define MAKE_TEST(TYPE, OBJECT, FUNC_NAME) \
 	TestCenter::Instance()->RegisterTestEvent(TYPE, TO_STRING(TYPE), OBJECT, FUNC_NAME)
 
 #define BROADCAST_MESSAGE(TYPE, ...) \
 	TestCenter::Instance()->BroadcastMessage(TYPE, __VA_ARGS__)
+
 
 class TestCenter
 {
